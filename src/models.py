@@ -80,7 +80,7 @@ class Favorite(Base):
     people_id = Column(Integer, ForeignKey('people.id'))
     user = relationship('User')
     planet = relationship('Planet')
-    character = relationship('People')
+    people = relationship('People')
     
 
 ## Draw from SQLAlchemy base
